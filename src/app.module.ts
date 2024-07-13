@@ -1,12 +1,16 @@
 import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { UserController } from './user/user.controller';
-import { PlaceController } from './place/place.controller';
+import { PrismaService } from './prisma/prisma.service';
+import { ConfigModule } from '@nestjs/config'
+import { envSchema } from './env';
+import { AuthModule } from './auth/auth.module';
+import { PlaceModule } from './place/place.module';
 
 @Module({
-  imports: [],
-  controllers: [AppController, UserController, PlaceController],
-  providers: [AppService],
+  imports: [ConfigModule.forRoot({
+    validate: env => envSchema.parse(env),
+    isGlobal: true
+  }), AuthModule, PlaceModule],
+  controllers: [],
+  providers: [PrismaService],
 })
 export class AppModule {}

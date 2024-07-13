@@ -1,0 +1,51 @@
+@authToken = {{authenticate.response.body.access_token}}
+
+
+### Create User
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+    "email": "juciaceza4re@gmail.com",
+    "password": "jucian123"
+}
+
+
+### Autheticate user
+# @name authenticate
+POST http://localhost:3000/auth
+Content-Type: application/json
+
+{
+    "email": "juciaceza4re@gmail.com",
+    "password": "jucian123"
+}
+
+### Create place
+# @name createPlace
+POST http://localhost:3000/places
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "name": "Pracinha",
+    "city": "Itá",
+    "state": "Santa Catarina"
+}
+
+### Edit place
+# @name createPlace
+PATCH http://localhost:3000/places/04722d9d-2634-4df8-9987-8c3498e083d9
+Authorization: Bearer {{authToken}}
+Content-Type: application/json
+
+{
+    "name": "Praça grandona",
+    "city": "Itá",
+    "state": "Santa Catarina"
+}
+
+### Delete place
+# @name createPlace
+DELETE  http://localhost:3000/places/04722d9d-2634-4df8-9987-8c3498e083d9
+Authorization: Bearer {{authToken}}
