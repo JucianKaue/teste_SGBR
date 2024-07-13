@@ -1,4 +1,4 @@
-import { Body, Controller, Delete, NotFoundException, Param, Req, UnauthorizedException, UseGuards } from "@nestjs/common";
+import { Controller, Delete, NotFoundException, Param, Req, UnauthorizedException, UseGuards } from "@nestjs/common";
 import { Request } from "express";
 import { JwtAuthGuard } from "src/auth/jwt-auth.guard";
 import { TokenPayload } from "src/auth/jwt.strategy";

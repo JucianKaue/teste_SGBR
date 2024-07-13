@@ -33,6 +33,11 @@ Content-Type: application/json
     "state": "Santa Catarina"
 }
 
+### Get place
+# @name createPlace
+DELETE  http://localhost:3000/places/04722d9d-2634-4df8-9987-8c3498e083d9
+Authorization: Bearer {{authToken}}
+
 ### Edit place
 # @name createPlace
 PATCH http://localhost:3000/places/04722d9d-2634-4df8-9987-8c3498e083d9
