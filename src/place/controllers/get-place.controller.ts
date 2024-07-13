@@ -19,10 +19,16 @@ export class GetPlaceController {
     ) {
         const user = request.user as TokenPayload
 
-        return this.prisma.place.findUnique({
+        const place = await this.prisma.place.findUnique({
             where: {
                 id: id
             }
         })
+
+        if (!place) {
+            throw new NotFoundException('This place does not exists')
+        }
+
+        return place
     }
 }
