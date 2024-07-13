@@ -44,6 +44,11 @@ Authorization: Bearer {{authToken}}
 GET  http://localhost:3000/places
 Authorization: Bearer {{authToken}}
 
+### List places by name
+# @name createPlace
+GET  http://localhost:3000/places?name=grando
+Authorization: Bearer {{authToken}}
+
 
 ### Edit place
 # @name createPlace

@@ -4,7 +4,7 @@ import { CreatePlaceController } from './controllers/create-place.controller';
 import { EditPlaceController } from './controllers/edit-place.controller';
 import { DeletePlaceController } from './controllers/delete-place.controller';
 import { GetPlaceController } from './controllers/get-place.controller';
-import { GetAllPlacesController } from './controllers/get-all-places.controller';
+import { ListPlacesController } from './controllers/list-places.controller';
 
 @Module({
   controllers: [
@@ -12,7 +12,7 @@ import { GetAllPlacesController } from './controllers/get-all-places.controller'
     EditPlaceController,
     DeletePlaceController,
     GetPlaceController,
-    GetAllPlacesController
+    ListPlacesController
   ],
   providers: [PrismaService]
 })
