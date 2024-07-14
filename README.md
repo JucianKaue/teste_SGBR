@@ -6,9 +6,9 @@ docker compose up --build
 ### Users endpoints
 
 #### Create User
-Registers a new user with the given email and password.
-Endpoint: POST http://localhost:3000/users
-Headers:
+<p>Registers a new user with the given email and password.</p>
+<p>Endpoint: POST http://localhost:3000/users</p>
+<p>Headers:<p>
 - Content-Type: application/json
 {
     "email": "",
@@ -16,9 +16,9 @@ Headers:
 }
 
 #### Auth User
-Authenticates the user and returns an access token.
-Endpoint: POST http://localhost:3000/auth
-Headers:
+<p>Authenticates the user and returns an access token.</p>
+<p>Endpoint: POST http://localhost:3000/auth</p>
+<p>Headers:</p>
 - Content-Type: application/json
 {
     "email": "",
@@ -28,9 +28,9 @@ Headers:
 ### Places endpoints
 
 #### Create Place
-Creates a new place with the specified details.
-Endpoint: POST http://localhost:3000/places
-Headers:
+<p>Creates a new place with the specified details.</p>
+<p>Endpoint: POST http://localhost:3000/places</p>
+<p>Headers:</p>
 - Authorization: Bearer {{authToken}}
 - Content-Type: application/json
 {
@@ -40,27 +40,27 @@ Headers:
 }
 
 #### Get Place
-Retrieves details of the place with the specified ID.
-Endpoint: POST http://localhost:3000/places/:id
-Headers:
+<p>Retrieves details of the place with the specified ID.</p>
+<p>Endpoint: POST http://localhost:3000/places/:id</p>
+<p>Headers:</p>
 - Authorization: Bearer authToken
 
 #### Get All Places
-Retrieves a list of all places.
-Endpoint: GET http://localhost:3000/places
-Headers:
+<p>Retrieves a list of all places.</p>
+<p>Endpoint: GET http://localhost:3000/places</p>
+<p>Headers:</p>
 - Authorization: Bearer authToken
 
 #### Get Places By Name
-Retrieves a list of places that cointains the searched name.
-Endpoint: GET http://localhost:3000/places?name=
-Headers:
+<p>Retrieves a list of places that cointains the searched name.</p>
+<p>Endpoint: GET http://localhost:3000/places?name=</p>
+<p>Headers:</p>
 - Authorization: Bearer authToken
 
 #### Edit Place
-Updates the details of the place with the specified ID.
-Endpoint: PATCH http://localhost:3000/places/:id
-Headers:
+<p>Updates the details of the place with the specified ID.</p>
+<p>Endpoint: PATCH http://localhost:3000/places/:id</p>
+<p>Headers:</p>
 - Authorization: Bearer authToken
 - Content-Type: application/json
 
@@ -71,7 +71,7 @@ Headers:
 }
 
 #### Delete Place
-Deletes the place with the specified ID.
-Endpoint: DELETE http://localhost:3000/places/:id
-Headers:
+<p>Deletes the place with the specified ID.</p>
+<p>Endpoint: DELETE http://localhost:3000/places/:id</p>
+<p>Headers:</p>
 - Authorization: Bearer authToken
