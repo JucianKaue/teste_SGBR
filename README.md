@@ -12,12 +12,10 @@ docker compose up --build
 <ul>
     <li>Content-Type: application/json</li>
 </ul>
-<code>
-{
+<code>{
     "email": "",
     "password": ""
-}
-</code>
+}</code>
 
 #### Auth User
 <p>Authenticates the user and returns an access token.</p>
@@ -26,12 +24,10 @@ docker compose up --build
 <ul>
     <li>Content-Type: application/json</li>
 </ul>
-<code>
-{
+<code>{
     "email": "",
     "password": ""
-}
-</code>
+}</code>
 
 ### Places endpoints
 
@@ -43,13 +39,11 @@ docker compose up --build
     <li>Authorization: Bearer authToken</li>
     <li>Content-Type: application/json</li>
 </ul>
-<code>
-{
+<code>{
     "name": "",
     "city": "",
     "state": ""
-}
-</code>
+}</code>
 
 #### Get Place
 <p>Retrieves details of the place with the specified ID.</p>
@@ -83,13 +77,11 @@ docker compose up --build
     <li>Authorization: Bearer authToken</li>
     <li>Content-Type: application/json</li>
 </ul>
-<code>
-{
+<code>{
     "name": "",
     "city": "",
     "state": ""
-}
-</code>
+}</code>
 
 #### Delete Place
 <p>Deletes the place with the specified ID.</p>
