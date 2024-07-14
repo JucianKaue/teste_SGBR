@@ -30,8 +30,9 @@ export class ListPlacesController {
 
         const user = request.user as TokenPayload
 
-
         let places: Place[] | undefined
+        // If there is a query param "name", find rows that "name" constains the search.
+        // Else, get All places
         if (name) {
             places = await this.prisma.place.findMany({
                 where: {

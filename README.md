@@ -1,5 +1,5 @@
 ## Start
-docker compose up --build
+docker compose up --build -d
 
 ## API endpoints
 
