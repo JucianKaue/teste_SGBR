@@ -10,7 +10,6 @@ import { PlaceModule } from './place/place.module';
     validate: env => envSchema.parse(env),
     isGlobal: true
   }), AuthModule, PlaceModule],
-  controllers: [],
   providers: [PrismaService],
 })
 export class AppModule {}
